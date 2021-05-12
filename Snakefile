@@ -25,7 +25,7 @@ rule all:
         'denovo_1kg_ac_stix_1kg_nz_plot.pdf'
 
 rule inflate:
-    intput:
+    input:
         'cosmic/cosmic.DEL.bed.stix_1kg.gz',
         'cosmic/cosmic.INVGRCh37.INV.bed.stix_1kg.gz',
         'cosmic/cosmic.DUP.bed.stix_1kg.gz',
@@ -169,8 +169,6 @@ rule cosmic_sv_beds:
         'bash src/get_cosmic_svs.sh'
 
 rule gnomad_sv_beds:
-    input:
-        'gnomad/gnomad_v2.1_sv.sites.bed.gz'
     output:
         'gnomad/gnomad.DEL.bed',
         'gnomad/gnomad.DUP.bed',
