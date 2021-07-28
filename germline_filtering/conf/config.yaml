@@ -1,0 +1,6 @@
+outdir: # output directory path.  Needs to contain stix index/database
+donor_table: # path to donor_table.tsv
+sample_names: # path to sample_names.txt
+icgc_bedpe_dir: # $PATH_TO_CLONED_REPO/
+gnomad_del_bed: # path to bed of gnomad del regions
+onekg_bedpe: # path to 1000 genomes del bedpe

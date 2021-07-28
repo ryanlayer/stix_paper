@@ -1,0 +1,12 @@
+channels:
+  - bioconda
+dependencies:
+  - python=2.7
+  - setuptools
+  - bedtools
+  - samtools
+  - bcftools
+  - pip
+  - pip:
+      - statsmodels==0.10.1
+      - svtools==0.5.1

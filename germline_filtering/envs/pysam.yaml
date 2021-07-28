@@ -1,0 +1,6 @@
+channels:
+  - bioconda
+dependencies:
+  - htslib=1.9
+  - pysam
+  - bedtools
