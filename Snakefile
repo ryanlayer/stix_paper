@@ -772,3 +772,25 @@ rule pcawg_1kg_ac_stix_1kg_nz_plot:
         '   --markeredgecolor C0  '
         '   --markerfacecolor C0 '
         '   --title "PCAWG in 1KG VCF and STIX 1KG Index;8;left" '
+
+rule stix_1kg_deletion_resolution_slide :
+    input:
+        '1kg/1kg.DEL.bed'
+    output:
+        '1kg.DEL.bed.stix_1kg.50_slide'
+    threads:
+        workflow.cores
+    shell:
+        """
+        bash src/stix_1kg_deletion_resolution_slide_cmd.sh {input} {output}
+        """
+rule stix_1kg_deletion_resolution_plot:
+    input:
+        '1kg.DEL.bed.stix_1kg.50_slide'
+    output:
+        'resolution.pdf'
+    shell:
+        """
+        cat {input} | cut -f 6 | python count_to_percent.py |
+            src/scatter.py -o {output}
+        """
