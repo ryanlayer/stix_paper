@@ -1,4 +1,5 @@
 outdir: # output directory path.  Needs to contain stix index/database
+reference: # path to hs37d5 reference genome (.fa.gz)
 donor_table: # path to donor_table.tsv
 sample_names: # path to sample_names.txt
 icgc_bedpe_dir: # $PATH_TO_CLONED_REPO/
