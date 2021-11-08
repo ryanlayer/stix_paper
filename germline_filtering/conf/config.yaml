@@ -3,4 +3,8 @@ donor_table: # path to donor_table.tsv
 sample_names: # path to sample_names.txt
 icgc_bedpe_dir: # $PATH_TO_CLONED_REPO/
 gnomad_del_bed: # path to bed of gnomad del regions
+gnomad_dup_bed: # path to gnomad dup regions
+gnomad_inv_bed: # path to gnomad inv regions
 onekg_bedpe: # path to 1000 genomes del bedpe
+onekg_dup_bed: # path to 1000 genomes dup regions
+onekg_inv_bed: # path to 1000 genomes inv regions
